@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <title>
+      {{ block "title" . }}
+        {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+      {{ end }}
+    </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link href="{{ .Site.BaseURL }}css/main.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+
+  </head>
+  <body class="">
+    {{ block "header" . }}
+      {{ partial "header" . }}
+    {{ end }}
+<main>
+    {{ block "body" . }}
+          {{ block "main" . }}
+          {{ end }}
+    {{ end }}
+</main>
+    {{ block "footer" . }}
+      {{ partial "footer" . }}
+    {{ end }}
+  </body>
+</html>

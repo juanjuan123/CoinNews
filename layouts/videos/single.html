@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="single-page">
+<article class="shrink">
+  <div class="article-wrap">
+    <h1>{{ .Title }}</h1>
+    <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+  <section class="container video">
+    <video width="100%" height="auto" controls>
+     <source src="{{ .Params.video_src}}" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+  </section>
+  <div class="article-wrap">
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+    <div class="page-nav pagination">
+        {{ with .PrevInSection }}
+          <a class="previous page-item page-link" href="{{.Permalink}}">Previous</a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next page-item page-link" href="{{.Permalink}}">Next</a>
+        {{ end }}
+    </div>
+
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+                <span class="seperator"></span>
+      <div class="related-content">
+      <h3>See Also</h3>
+      	{{ range . }}
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+               <figure style="background-image: url('{{ .Params.featured_image }}');height: 200px;"></figure>
+            </div>
+            <div class="col-12">
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            </div>
+          </div>
+        </div>
+      	{{ end }}
+
+      </div>
+      {{ end }}
+  </div>
+</article>
+  </div>
+{{ end }}

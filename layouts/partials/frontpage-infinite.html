@@ -1,0 +1,44 @@
+<section class="articles-container shrink">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 main">
+<div class="featured-article">
+  <div class="featured-wrap">
+    {{ range first 1 (where .Data.Pages ".Params.featured" "=" true) }}
+    <span class="cat-tag">{{ if eq .Params.sponsored true }}Sponsored{{ if in .Params.type "videos" }} Video{{ end }}{{ else }}{{ if in .Params.type "videos" }}Video:{{ end }}
+      {{ range first 1 .Params.categories }}{{ . }}{{ end }}{{ end }}</span>
+    <a href="{{ .Permalink }}"><figure style="background-image: url('{{ .Params.featured_image }}');"></figure></a>
+    <div class="featured-title">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    </div>
+    {{ end }}
+  </div>
+</div>
+      </div>
+      <div class="col-lg-6 aside">
+          <div class="container">
+            <div class="row" data-infinite-scroll='{ "path": ".pagination__link--next", "append": ".article", "history": false }'>
+              {{ $paginator := .Paginate (where .Data.Pages ".Params.featured" "!=" true) }}
+
+                {{ range $paginator.Pages }}
+                <div class="col-lg-6 article">
+                    <a href="{{ .Permalink }}">
+                      <span class="cat-tag">{{ if eq .Params.sponsored true }}Sponsored{{ if in .Params.type "videos" }} Video{{ end }}{{ else }}{{ if in .Params.type "videos" }}Video:{{ end }}
+                        {{ range first 1 .Params.categories }}{{ . }}{{ end }}{{ end }}</span>
+                      <figure style="background-image: url('{{ .Params.featured_image }}');"></figure>
+                    </a>
+                      <h3 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                </div>
+                {{ end }}
+                <div class="col-12">
+                  {{ if $paginator.HasNext }}
+                      <a href="{{ $paginator.Next.URL }}" class="pagination__link--next">
+                      </a>
+                  {{ end }}
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

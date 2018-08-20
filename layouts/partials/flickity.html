@@ -1,0 +1,10 @@
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+  {{ range first 5 (where .Data.Pages ".Params.slider" "=" true) }}
+    <div class="carousel-cell jumbotron jumbotron-fluid" style="background-image: url('{{ .Params.featured_image }}');">
+      <a href="{{ .Permalink }}"><div class="overlay"></div></a>
+      <div class="flickity-title">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      </div>
+    </div>
+    {{ end }}
+</div>
