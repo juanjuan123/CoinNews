@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="cat-page">
+  <section class="cat-list">
+      <div class="container">
+        <div class="row infinite-scroll">
+                {{ range (.Paginator 8).Pages }}
+          <div class="col-12 append">
+            <span>{{ .Date }}</span>
+             <a href="{{ .Permalink }}"><figure style="background-image: url('{{ .Params.featured_image }}');"></figure></a>
+             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <span class="seperator"></span>
+          </div>
+                {{ end }}
+        </div>
+      </div>
+      {{ if .Paginator.HasNext }}
+          <a href="{{ .Paginator.Next.URL }}" class="pagination__next">
+          </a>
+          <button class="view-more-button">View more</button>
+      {{ end }}
+  </section>
+</div>
+{{ end }}

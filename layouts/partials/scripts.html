@@ -1,0 +1,71 @@
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script type="text/javascript">
+$(function() {
+var hieghtThreshold1 = $(".flickity-slider").offset().top;
+$(window).scroll(function() {
+  var scroll1 = $(window).scrollTop();
+
+  if (scroll1 >= hieghtThreshold1 ) {
+      $(".articles-container").removeClass('shrink');
+  } else {
+    $(".articles-container").addClass('shrink');
+  }
+});
+})
+</script>
+<script type="text/javascript">
+$(function() {
+var hieghtThreshold2 = $("nav").height();
+$(window).scroll(function() {
+  var scroll2 = $(window).scrollTop();
+
+  if (scroll2 >= hieghtThreshold2 ) {
+      $("article").removeClass('shrink');
+  } else {
+    $("article").addClass('shrink');
+  }
+});
+})
+</script>
+<script type="text/javascript">
+$(function() {
+var hieghtThreshold3 = $(".aside").offset().top - 32;
+//var hieghtThreshold_end  = $(".aside").offset().top + $(".aside").height() + $(".featured-article").height();
+$(window).scroll(function() {
+  var scroll3 = $(window).scrollTop();
+
+//  if (scroll3 >= hieghtThreshold3 && scroll3 <=  hieghtThreshold_end )
+  if (scroll3 >= hieghtThreshold3 ) {
+      $(".articles-container").addClass('fixed');
+  } else {
+    $(".articles-container").removeClass('fixed');
+  }
+//  if (scroll3 >=  hieghtThreshold_end ) {
+//      $(".articles-container").addClass('bottom');
+//  } else {
+//    $(".articles-container").removeClass('bottom');
+//  }
+});
+})
+</script>
+<script type="text/javascript">
+$(function() {
+  $(".navbar-toggler").click(function() {
+    $("body").toggleClass('show');
+  });
+})
+</script>
+<script type="text/javascript">
+var $container = $('.infinite-scroll').infiniteScroll({
+  // options...
+  // disable loading on scroll
+  path: '.pagination__next',
+  append: '.append',
+   button: '.view-more-button',
+  scrollThreshold: false,
+});
+</script>
