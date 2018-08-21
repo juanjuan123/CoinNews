@@ -4,7 +4,7 @@ description: "Crypto wallet Blockchain.com has recently launched comprehensive i
 draft: false
 featured_image: "/img/Tel-Aviv-Wallpaper-.jpeg" #"https://cryptos.com/wp-content/uploads/2018/07/Tel-Aviv-Wallpaper--910x420.jpeg"
 categories:
-- News
+- Future
 tags:
 - Development
 featured: false

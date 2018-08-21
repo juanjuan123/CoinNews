@@ -5,7 +5,7 @@ date: "2012-04-06"
 draft: false
 featured_image: "/img/facebook-coins-and-stuff.jpg" # "https://news.cryptos.com/wp-content/uploads/2018/03/United_States_Postal_Service_HQ-910x420.jpg"
 categories:
-- Culture
+- Future
 tags:
 - Development
 featured: true

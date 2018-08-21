@@ -4,7 +4,7 @@ description: "Crypto wallet Blockchain.com has recently launched comprehensive i
 draft: false
 featured_image: "/img/Digipulse-founders-2.jpg" #https://cryptos.com/wp-content/uploads/2018/07/Digipulse-founders-2-910x420.jpg"
 categories:
-- News
+- Weather
 tags:
 - Development
 featured: false

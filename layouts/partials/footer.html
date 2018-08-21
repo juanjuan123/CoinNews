@@ -1,24 +1,31 @@
 <footer class="section bg-dark">
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-2 col-sm-2">
+    <div class="col-2">
       <a class="navbar-brand" href="#">CoinNews Feed</a>
       <!--img src="/img/logo_dark.svg" style="max-width:350px"-->
     </div>
-    <div class="col-2 col-sm-4">
-      <div class="row justify-content-center">
-        <a class="navbar-brand" href="#">News</a>
-        <a class="navbar-brand" href="#">Sport</a>
-        <a class="navbar-brand" href="#">Weather</a>
+    <div class="col-4">
+      <div class="row no-gutter justify-content-center">
+        <a class="navbar-brand" href="{{ "/categories/" | relLangURL }}{{ "News" | urlize }}">NEWS</a>
+        <a class="navbar-brand" href="{{ "/categories/" | relLangURL }}{{ "Sport" | urlize }}">SPORT</a>
+        <a class="navbar-brand" href="{{ "/categories/" | relLangURL }}{{ "Weather" | urlize }}">WEATHER</a>
+        <a class="navbar-brand" href="{{ "/categories/" | relLangURL }}{{ "Future" | urlize }}">FUTURE</a>
       </div>
     </div>
-    <div class="col-1 col-sm-2">
-      <a class="navbar-brand" href="#">IG TW FB</a>
+    <div class="col-2 justify-content-center">
+      <div class="row no-gutter justify-content-center">
+        <a class="navbar-brand" href="#">IG</a>
+        <a class="navbar-brand" href="#">TW</a>
+        <a class="navbar-brand" href="#">FB</a>
+      </div>
     </div>
-    <div class="col-1 col-sm-2">
-      <button type="button" class="btn btn-primary"> Subscribe</button>
+    <div class="col-2 justify-center">
+      <div class="row no-gutter justify-content-center">
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
     </div>
-    <div class="col-1 col-sm-2">
+    <div class="col-2">
       <button type="button" class="btn btn-info btn-block"> &#8679;</button>
     </div>
   </div>
