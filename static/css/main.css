@@ -112,6 +112,10 @@ Nav
   background-color:#1589FF!important;
 }
 
+.bg-dark > .container-fluid {
+    max-width: 75%;
+}
+
 .navbar-brand {
   margin-bottom: 0rem;
   margin-right:.25rem;
@@ -119,7 +123,20 @@ Nav
   /* width:500px; */
   text-align: center;
   font-size: 20Px;
-  padding: 1.25rem 0rem;
+  padding: 1.25rem 0rem 0rem 0rem;
+  /* max-width: 100px; */
+  min-width: 1px;
+}
+
+.navbar-link {
+  margin-bottom: 0rem;
+  margin-right:.25rem;
+  margin-left: .25rem;
+  /* width:500px; */
+  text-align: center;
+  font-size: 14px;
+  padding: 1.5rem 0rem 0rem 0rem;
+  /* max-width: 100px; */
 }
 
 .nav-item {
