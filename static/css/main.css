@@ -89,7 +89,7 @@ Buttons
     background-color: #fff;
     border-color: #fff;
     align-content: center;
-    margin: 1rem 0rem;
+    margin: .85rem 0rem;
 }
 
 .btn-block {
@@ -117,25 +117,26 @@ Nav
 }
 
 .navbar-brand {
-  margin-bottom: 0rem;
+  margin-top: .85rem;
+  margin-bottom: .85rem;
   margin-right:.25rem;
   margin-left: .25rem;
   /* width:500px; */
   text-align: center;
   font-size: 20Px;
-  padding: 1.25rem 0rem 0rem 0rem;
   /* max-width: 100px; */
-  min-width: 1px;
+  /* min-width: 1px; */
+  flex-wrap: wrap;
 }
 
 .navbar-link {
-  margin-bottom: 0rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
   margin-right:.25rem;
   margin-left: .25rem;
   /* width:500px; */
   text-align: center;
-  font-size: 14px;
-  padding: 1.5rem 0rem 0rem 0rem;
+  font-size: 12px;
   /* max-width: 100px; */
 }
 
