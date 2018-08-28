@@ -113,7 +113,7 @@ Nav
 }
 
 .bg-dark > .container-fluid {
-    max-width: 75%;
+    max-width: 77%;
 }
 
 .navbar-brand {
@@ -126,7 +126,8 @@ Nav
   font-size: 20Px;
   /* max-width: 100px; */
   /* min-width: 1px; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  white-space: normal;
 }
 
 .navbar-link {
@@ -138,8 +139,12 @@ Nav
   text-align: center;
   font-size: 12px;
   /* max-width: 100px; */
+  white-space: normal;
 }
-
+/*.row {
+  white-space: normal;
+}
+*/
 .nav-item {
     text-transform: capitalize;
 }

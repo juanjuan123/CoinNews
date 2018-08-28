@@ -5,7 +5,7 @@ draft: false
 featured_image: "/img/network-social-media.jpg" #"https://cryptos.com/wp-content/uploads/2018/06/21314506_1652634211435819_8311754815884399657_n-910x420.jpg"
 sponsored: false
 categories:
-- News
+- Sport
 tags:
 - Development
 featured: false

@@ -4,7 +4,7 @@ description: "Crypto wallet Blockchain.com has recently launched comprehensive i
 draft: false
 featured_image: "/img/4-4.jpg" #"https://cryptos.com/wp-content/uploads/2018/06/4-4.jpg"
 categories:
-- News
+- Future
 tags:
 - Development
 featured: false

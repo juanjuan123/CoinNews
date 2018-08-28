@@ -4,7 +4,7 @@ description: "Crypto wallet Blockchain.com has recently launched comprehensive i
 draft: false
 featured_image: "/img/facebook-coins-and-stuff.jpg" # "https://cryptos.com/wp-content/uploads/2018/06/coinbase-acquires-keystone-capital-brokerage-launches-index-fund2.jpg"
 categories:
-- News
+- Future
 tags:
 - Development
 featured: false
