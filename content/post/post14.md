@@ -11,6 +11,7 @@ tags:
 featured: true
 slider: true
 type: "posts"
+author: "John Smith"
 ---
 Facebook starts allowing ads that promote cryptocurrency and related content from pre-approved advertisers.
 
