@@ -17,6 +17,7 @@ Facebook starts allowing ads that promote cryptocurrency and related content fro
 
 According to an official statement, the new updated terms started working from June 26. Ads promoting binary options and initial coin offerings will continue to be prohibited.
 
+<!--more-->
 Those advertisers who wish to run ads for cryptocurrency products and services must submit an application to help Facebook assess their eligibility. The application must contain information on any licenses advertisers have obtained, whether they are traded on a public stock exchange, and other relevant public background on their business.
 
 >“Given these restrictions, not everyone who wants to advertise will be able to do so. But we’ll listen to feedback, look at how well this policy works and continue to study this technology so that, if necessary, we can revise it over time,” Facebook states.

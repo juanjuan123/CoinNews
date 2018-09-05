@@ -4,8 +4,10 @@ Main CSS
 @import url('https://fonts.googleapis.com/css?family=Heebo:700|Poppins');
 
 h1,h2,h3, h1 a, h2 a, h3 a, .nav-link {
-  font-family: 'Heebo', sans-serif;
+  font-family: Georgia, serif;
+  /* font-family: 'Heebo', sans-serif; */
   letter-spacing: .0125rem;
+  color: dodgerblue;
 }
 
 h1 a, h2 a, h3 a {
@@ -25,6 +27,10 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+}
+
+p.thick {
+    font-weight: bold;
 }
 
 p, a {

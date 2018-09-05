@@ -1,5 +1,6 @@
 ---
 title: "New digital asset vault to help you pass on crypto"
+author: "John Smith"
 description: "Crypto wallet Blockchain.com has recently launched comprehensive institutional platform called Blockchain Principal Strategies (BPS)."
 draft: false
 featured_image: "/img/Digipulse-founders-2.jpg" #https://cryptos.com/wp-content/uploads/2018/07/Digipulse-founders-2-910x420.jpg"
