@@ -308,13 +308,16 @@ article {
     transition: margin 260ms cubic-bezier(.25,.46,.45,.94),transform 520ms cubic-bezier(.25,.46,.45,.94);
 }
 
-.summary {
+article.summary {
   background-color: #EBF5FB;
-  padding: 2rem 0;
+  padding: 4rem 0;
+  margin: 2rem 2rem 0 2rem !;
 }
 
 .col-lg-3 {
   background-color: white;
+  text-align: center;
+  /* vertical-align: middle; */
 }
 
 article.shrink {
